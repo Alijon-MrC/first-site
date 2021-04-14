@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+}
+ /* style for body content */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #3b3d42;
+    line-height: 1.6;
+    font-family: 'Libre Caslon Text', sans-serif;
+}
+
+h1, h2{
+    color: #05237D;
+    font-family: "firasans", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+h3{
+    color: #68B8D4;
+    font-family: "FiraSans", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+h4{
+    color: #05237D;
+    font-family: "FiraSans", Sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin: 30px 0;
+}
+
+p{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.73em;
+    color: #2F2F2F;
+}
+
+.italic{
+    font-family: 'Libre Caslon Text';
+    font-style: italic;
+}
+
+u{
+    text-decoration: underline;
+    color: #05237d;
+}
+
+b{
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-weight: bold;
+}
+
+/* basic conatiner */
+.container{
+    max-width: 1366px;
+    margin: auto; 
+}
+/* padding for every conatainers */ 
+.padding{
+    padding: 150px 150px;
+}
+
+.header{
+    padding: 0px 100px 150px ;
+    background-color: #E3F2F8;
+}
+/* sytle for ul in the top menu */ 
+.navbar ul{
+    display: grid;
+    grid-template-columns: 44% 28% 28%;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+    font-family: firasans;
+    font-weight: 300;
+}
+/* styles for a in the top menu */
+.navbar ul a{
+    background-color: transparent;
+    text-decoration: none;
+    font-family:  'firasans', sans-serif;
+    font-weight: 500;
+    line-height: 1.2em;
+    transition: border 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a.mail{
+    color: #05237D; 
+}
+
+a.mail:hover{
+    border-bottom: 1px solid #05227A;
+}
+
+
+.navbar li:nth-child(3) a{
+    color: #2F2F2F;
+}
+
+.navbar li:nth-child(3) a:hover{
+    border-bottom: 1px solid #2F2F2F;
+}
+
+/* styles for under top menu that basic */
+.basic{
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+.basic img{
+    position: relative;
+    right: 20px;
+}
+
+.basic h1, .basic h2{
+    font-size: 72px;
+    margin: 20px 0;
+}
+
+.basic p{
+    line-height: 1.73em;
+    width: 62%;
+    margin: 0 auto;
+}
+
+.basic a{
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-family: 'firasans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.basic a:nth-of-type(1){
+    background-color: #05237D;
+    color: #fff;
+    padding: 26px 91px;
+    margin: 50px 20px 0 0;
+}
+
+.basic a:nth-of-type(1):hover{
+    background-color: #2F2F2F;
+}
+
+.basic a:nth-of-type(2){
+    background-color: #fff;
+    color: #05237D;
+    padding: 26px 53px;
+}
+
+.basic a:nth-of-type(2):hover{
+    background-color: #2F2F2F;
+    color: #fff;
+}
+
+/* styles for about me content */
+.about_me{
+    background-color: #F6FBFD;
+    display: grid;
+    grid-template-columns: 60% 40%;  
+}
+
+.about_me .item1{
+    margin-right: 150px; 
+}
+
+.item1 h2{
+    margin-right: 20px;    
+}
+
+.about_me .item2{
+    text-align: right;
+}
+
+/* style for my course */
+.my_course{
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.my_course p{
+    text-align: left;
+    line-height: 1.73em;
+}
+
+.my_course ul{
+    margin: 30px; 
+    font-size: 22px;
+    text-align: left;
+    list-style: none;
+}
+
+.my_course li::before{
+    content: "\2022";
+    color: #68B8D4;
+    display: inline-block;
+    font-weight: bold;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* styles for features */
+.feature{
+    background-color: #F6FBFD;
+}
+.features{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.features .item1 span{
+    color: #2F2F2F;
+    font-family: "Libre Caslon Text", Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.87em;
+    display: inline-block;
+    margin-right: 180px;
+}
+
+.features .items{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* styles for all li in the features*/ 
+.features  li{
+    font-size: 22px;
+    font-family: 'Libre Caslon Text', sans-serif;
+    color: #68B8D4;
+}
+
+.features li span{
+    color: #2f2f2f;
+}
+
+/* styles for out_course*/
+.out_course{
+    background-color: #E3F2F8;
+    border-collapse: collapse;
+}
+
+.out_course .span{
+    color: #2F2F2F;
+    font-family: "Libre Caslon Text", Sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.87em;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 220px;
+}
+
+/* styles for materials */
+.materials{
+    background-color: #F6FBFD;
+}
+
+.theme{
+    background-image: url('../img/plus.svg');
+    background-color: #fff;
+    color: #05237D;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    font-family: 'firasans', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #E6E6E6;
+    padding: 15px 0 15px 50px ;
+    border-radius: 8px;
+    font-size: 22px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.theme:hover, .theme:focus{
+    background-color: #05237D;  
+    color: #fff;
+}
+
+.theme:focus{
+    background-image: url('../img/minus.svg');
+}
+
+.dropdown{
+    margin: 15px 0;
+}
+
+.dropdown ol {
+    padding: 0;
+    margin: 0px;
+    position: relative;
+    bottom: 8px;
+    z-index: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.dropdown ol li{
+    background-color: #fff;
+    color: #68B8D4;
+    font-size:16px;
+    width: 100%;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+    padding: 20px 0 20px 50px ;
+    list-style-position: inside;
+}
+
+.dropdown ol li:last-child{
+    border-bottom: 1px solid #E6E6E6;
+    border-radius: 0 0 8px 8px;
+}
+
+.dropdown ol span{
+    color: #2F2F2F;
+}
+
+span.left{
+    text-align: right;
+    display: inline-block;
+    font-family: 'firasans', sans-serif;
+}
+
+/* drop down */
+
+.theme:focus + ol{
+    height: calc(66px*6);
+}
+
+/* styles for FAQ */ 
+.faq> div:first-child{
+    text-align: center;
+    width: 35%;
+    margin: 0 auto; 
+}
+
+.question{
+    width: 65%;
+    margin: auto;
+    outline: none;
+}
+
+.question h4::before{
+    content: "Q: ";
+    color: #68B8D4;
+    font-size: 28px;
+    font-family: 'firasans', sans-serif;
+}
+
+.question p{
+    margin: 0 0 0 35px;
+}
+
+.question p::before{
+    content: "A: ";
+    font-family: "Libre Caslon Text", Sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.73em;
+    color: #68b8d4;   
+}
+
+/* basic2 */
+
+.container .bg{
+    background-color: #1E306E;
+}
+
+.bg h2, .bg p{
+    color: #fff;
+}
+.basic a.basic2{
+    background-color: #C1E3EF;
+    color: #05237d;
+}
+
+.basic a.basic2:hover{
+    color: #fff;
+}
